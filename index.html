@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechTrove - Shop the latest smartphones, TVs, tablets, and accessories. Up to 30% off in our May Sale!">
+    <meta name="keywords" content="electronics, smartphones, TVs, tablets, TechTrove, May Sale">
+    <title>TechTrove - Electronics & Smartphones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32?text=TT">
+</head>
+<body>
+    <header class="sticky">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechTrove</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." aria-label="Search">
+                <button>🔍</button>
+            </div>
+            <div class="nav-icons">
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="#" id="cart-icon" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+                <a href="#" aria-label="Login">👤</a>
+            </div>
+            <div class="currency-selector">
+                <select id="currency">
+                    <option value="EUR">EUR (€)</option>
+                    <option value="PLN">PLN (zł)</option>
+                    <option value="USD">USD ($)</option>
+                </select>
+            </div>
+        </nav>
+        <div class="categories">
+            <a href="category.html?cat=phones">Popular Phones</a>
+            <a href="category.html?cat=dyson">Dyson Products</a>
+            <a href="category.html?cat=tvs">TVs</a>
+            <a href="category.html?cat=tablets">Tablets</a>
+            <a href="category.html?cat=accessories">Accessories</a>
+            <a href="category.html?cat=sales">May Sale</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-slider">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="May Sale Banner" loading="lazy">
+                    <div class="slide-content">
+                        <h1>May Sale - Up to 30% Off!</h1>
+                        <a href="category.html?cat=sales" class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897206b83b" alt="New iPhone 16" loading="lazy">
+                    <div class="slide-content">
+                        <h1>New iPhone 16</h1>
+                        <a href="product.html?id=iphone16" class="btn">Discover Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-prev">❮</button>
+            <button class="slider-next">❯</button>
+        </section>
+
+        <section class="popular-products">
+            <h2>Popular Products</h2>
+            <div class="product-grid">
+                <article class="product-card" data-id="iphone16">
+                    <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="iPhone 16" loading="lazy">
+                    <h3>iPhone 16</h3>
+                    <p>Latest Apple smartphone with A18 chip.</p>
+                    <div class="price">
+                        <span class="original-price">€999</span>
+                        <span class="sale-price">€799</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart" data-id="iphone16">Add to Cart</button>
+                    <button class="quick-view" data-id="iphone16">Quick View</button>
+                    <a href="product.html?id=iphone16" class="product-link">View Details</a>
+                </article>
+                <article class="product-card" data-id="galaxys24">
+                    <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c" alt="Samsung Galaxy S24" loading="lazy">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p>High-performance AMOLED smartphone.</p>
+                    <div class="price">
+                        <span class="original-price">€899</span>
+                        <span class="sale-price">€719</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                    <button class="add-to-cart" data-id="galaxys24">Add to Cart</button>
+                    <button class="quick-view" data-id="galaxys24">Quick View</button>
+                    <a href="product.html?id=galaxys24" class="product-link">View Details</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="trusted-brands">
+            <h2>Trusted Brands</h2>
+            <div class="brand-logos">
+                <img src="https://via.placeholder.com/100?text=Apple" alt="Apple" loading="lazy">
+                <img src="https://via.placeholder.com/100?text=Samsung" alt="Samsung" loading="lazy">
+                <img src="https://via.placeholder.com/100?text=Dyson" alt="Dyson" loading="lazy">
+                <img src="https://via.placeholder.com/100?text=Sony" alt="Sony" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About TechTrove</h3>
+                <p>Founded in 2015, TechTrove operates in Germany, France, Spain, and Poland, delivering top electronics to thousands of customers.</p>
+            </div>
+            <div class="store-locations">
+                <h3>Our Stores</h3>
+                <p>🇩🇪 Germany | 🇫🇷 France | 🇪🇸 Spain | 🇵🇱 Poland</p>
+                <div class="store-map" id="store-map">[Interactive Map Placeholder]</div>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <img src="https://via.placeholder.com/50?text=Visa" alt="Visa" loading="lazy">
+                <img src="https://via.placeholder.com/50?text=MasterCard" alt="MasterCard" loading="lazy">
+                <img src="https://via.placeholder.com/50?text=PayPal" alt="PayPal" loading="lazy">
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a>
+            <a href="return-policy.html">Return Policy</a>
+            <a href="#">Shipping Policy</a>
+        </div>
+    </footer>
+
+    <div class="chat-bot">
+        <button id="chat-toggle">💬</button>
+        <div id="chat-window" class="hidden">
+            <div class="chat-header">TechTrove Support</div>
+            <div class="chat-body">
+                <p>Welcome! How can we help you?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." id="chat-input">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
