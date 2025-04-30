@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechTrove FAQ - Answers to common questions about shipping, returns, and more.">
+    <title>FAQ - TechTrove</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechTrove</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." aria-label="Search">
+                <button>🔍</button>
+            </div>
+            <div class="nav-icons">
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="#" id="cart-icon" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+                <a href="#" aria-label="Login">👤</a>
+            </div>
+            <div class="currency-selector">
+                <select id="currency">
+                    <option value="EUR">EUR (€)</option>
+                    <option value="PLN">PLN (zł)</option>
+                    <option value="USD">USD ($)</option>
+                </select>
+            </div>
+        </nav>
+        <div class="categories">
+            <a href="category.html?cat=phones">Popular Phones</a>
+            <a href="category.html?cat=dyson">Dyson Products</a>
+            <a href="category.html?cat=tvs">TVs</a>
+            <a href="category.html?cat=tablets">Tablets</a>
+            <a href="category.html?cat=accessories">Accessories</a>
+            <a href="category.html?cat=sales">May Sale</a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> > <span>FAQ</span>
+        </nav>
+        <section class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <h3>What if my package is lost?</h3>
+            <p>If your package is lost before delivery, we will issue a full refund or send a replacement at no cost.</p>
+            <h3>Can I return a product?</h3>
+            <p>Yes, you can return any product within 14 days of receipt for a full refund, provided it is in original condition.</p>
+            <h3>How long does shipping take?</h3>
+            <p>Shipping typically takes 3–7 business days within Europe.</p>
+            <h3>Do you offer international shipping?</h3>
+            <p>Currently, we ship to Germany, France, Spain, and Poland. Contact support for other regions.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About TechTrove</h3>
+                <p>Founded in 2015, TechTrove operates in Germany, France, Spain, and Poland, delivering top electronics to thousands of customers.</p>
+            </div>
+            <div class="store-locations">
+                <h3>Our Stores</h3>
+                <p>🇩🇪 Germany | 🇫🇷 France | 🇪🇸 Spain | 🇵🇱 Poland</p>
+                <div class="store-map" id="store-map">[Interactive Map Placeholder]</div>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <img src="https://via.placeholder.com/50?text=Visa" alt="Visa" loading="lazy">
+                <img src="https://via.placeholder.com/50?text=MasterCard" alt="MasterCard" loading="lazy">
+                <img src="https://via.placeholder.com/50?text=PayPal" alt="PayPal" loading="lazy">
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a>
+            <a href="return-policy.html">Return Policy</a>
+            <a href="#">Shipping Policy</a>
+        </div>
+    </footer>
+
+    <div class="chat-bot">
+        <button id="chat-toggle">💬</button>
+        <div id="chat-window" class="hidden">
+            <div class="chat-header">TechTrove Support</div>
+            <div class="chat-body">
+                <p>Welcome! How can we help you?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." id="chat-input">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
