@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse smartphones at TechTrove. Shop iPhone, Samsung, Xiaomi with May Sale discounts.">
+    <title>Popular Phones - TechTrove</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky">
+        <!-- Same navbar as index.html -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechTrove</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." aria-label="Search">
+                <button>🔍</button>
+            </div>
+            <div class="nav-icons">
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="#" id="cart-icon" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+                <a href="#" aria-label="Login">👤</a>
+            </div>
+            <div class="currency-selector">
+                <select id="currency">
+                    <option value="EUR">EUR (€)</option>
+                    <option value="PLN">PLN (zł)</option>
+                    <option value="USD">USD ($)</option>
+                </select>
+            </div>
+        </nav>
+        <div class="categories">
+            <a href="category.html?cat=phones">Popular Phones</a>
+            <a href="category.html?cat=dyson">Dyson Products</a>
+            <a href="category.html?cat=tvs">TVs</a>
+            <a href="category.html?cat=tablets">Tablets</a>
+            <a href="category.html?cat=accessories">Accessories</a>
+            <a href="category.html?cat=sales">May Sale</a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> > <span>Popular Phones</span>
+        </nav>
+        <section class="category-page">
+            <aside class="filters">
+                <h3>Filters</h3>
+                <div>
+                    <label>Brand:</label>
+                    <select id="filter-brand">
+                        <option value="all">All</option>
+                        <option value="apple">Apple</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="xiaomi">Xiaomi</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Price Range:</label>
+                    <input type="range" min="0" max="2000" value="2000" id="filter-price">
+                    <span id="price-value">€2000</span>
+                </div>
+                <div>
+                    <label>Storage:</label>
+                    <select id="filter-storage">
+                        <option value="all">All</option>
+                        <option value="128">128GB</option>
+                        <option value="256">256GB</option>
+                        <option value="512">512GB</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Sort By:</label>
+                    <select id="sort-by">
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+            </aside>
+            <div class="product-grid">
+                <article class="product-card" data-id="iphone16">
+                    <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="iPhone 16" loading="lazy">
+                    <h3>iPhone 16</h3>
+                    <p>Latest Apple smartphone with A18 chip.</p>
+                    <div class="price">
+                        <span class="original-price">€999</span>
+                        <span class="sale-price">€799</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart" data-id="iphone16">Add to Cart</button>
+                    <button class="quick-view" data-id="iphone16">Quick View</button>
+                    <button class="compare" data-id="iphone16">Compare</button>
+                    <a href="product.html?id=iphone16" class="product-link">View Details</a>
+                </article>
+                <article class="product-card" data-id="galaxys24">
+                    <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c" alt="Samsung Galaxy S24" loading- Скидка 20% на Samsung Galaxy S24! Покупайте сейчас и получите бесплатную доставку.
