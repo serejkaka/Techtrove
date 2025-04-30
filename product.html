@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy iPhone 16 at TechTrove. Check specs, reviews, and May Sale discounts.">
+    <title>iPhone 16 - TechTrove</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechTrove</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." aria-label="Search">
+                <button>🔍</button>
+            </div>
+            <div class="nav-icons">
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="#" id="cart-icon" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+                <a href="#" aria-label="Login">👤</a>
+            </div>
+            <div class="currency-selector">
+                <select id="currency">
+                    <option value="EUR">EUR (€)</option>
+                    <option value="PLN">PLN (zł)</option>
+                    <option value="USD">USD ($)</option>
+                </select>
+            </div>
+        </nav>
+        <div class="categories">
+            <a href="category.html?cat=phones">Popular Phones</a>
+            <a href="category.html?cat=dyson">Dyson Products</a>
+            <a href="category.html?cat=tvs">TVs</a>
+            <a href="category.html?cat=tablets">Tablets</a>
+            <a href="category.html?cat=accessories">Accessories</a>
+            <a href="category.html?cat=sales">May Sale</a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> > <a href="category.html?cat=phones">Popular Phones</a> > <span>iPhone 16</span>
+        </nav>
+        <section class="product-details">
+            <div class="product-gallery">
+                <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="iPhone 16" class="main-image" loading="lazy">
+                <div class="thumbnail-gallery">
+                    <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="Thumbnail 1" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="Thumbnail 2" loading="lazy">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>iPhone 16</h1>
+                <div class="rating">★★★★☆</div>
+                <div class="price">
+                    <span class="original-price">€999</span>
+                    <span class="sale-price">€799</span>
+                    <span class="discount-badge">-20%</span>
+                </div>
+                <p>Latest Apple smartphone with A18 chip, 6.1-inch display, and advanced camera system.</p>
+                <button class="add-to-cart" data-id="iphone16">Add to Cart</button>
+                <button class="compare" data-id="iphone16">Add to Compare</button>
+                <h3>Tech Specs</h3>
+                <ul>
+                    <li>Display: 6.1-inch Super Retina XDR</li>
+                    <li>Chip: A18 Bionic</li>
+                    <li>Camera: 48MP Main + 12MP Ultra Wide</li>
+                    <li>Storage: 128GB/256GB/512GB</li>
+                </ul>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <article>
+                <div class="review-header">
+                    <img src="https://via.placeholder.com/40?text=JD" alt="John D." class="avatar">
+                    <p><strong>John D.</strong> ★★★★★ <span>Verified Purchase</span></p>
+                    <span>April 25, 2025</span>
+                </div>
+                <p>Amazing phone, fast and great camera!</p>
+            </article>
+            <article>
+                <div class="review-header">
+                    <img src="https://via.placeholder.com/40?text=AK" alt="Anna K." class="avatar">
+                    <p><strong>Anna K.</strong> ★★★★☆ <span>Verified Purchase</span></p>
+                    <span>April 20, 2025</span>
+                </div>
+                <p>Love it, but battery could be better.</p>
+            </article>
+        </section>
+        <section class="recommended-products">
+            <h2>Recommended Products</h2>
+            <div class="product-grid">
+                <article class="product-card" data-id="airpods">
+                    <img src="https://images.unsplash.com/photo-1605462305179-c08a523b4bd6" alt="AirPods Pro" loading="lazy">
+                    <h3>AirPods Pro</h3>
+                    <p>Wireless earbuds with noise cancellation.</p>
+                    <div class="price">
+                        <span class="sale-price">€249</span>
+                    </div>
+                    <button class="add-to-cart" data-id="airpods">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About TechTrove</h3>
+                <p>Founded in 2015, TechTrove operates in Germany, France, Spain, and Poland, delivering top electronics to thousands of customers.</p>
+            </div>
+            <div class="store-locations">
+                <h3>Our Stores</h3>
+                <p>🇩🇪 Germany | 🇫🇷 France | 🇪🇸 Spain | 🇵🇱 Poland</p>
+                <div class="store-map" id="store-map">[Interactive Map Placeholder]</div>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <img src="https://via.placeholder.com/50?text=Visa" alt="Visa" loading="lazy">
+                <img src="https://via.placeholder.com/50?text=MasterCard" alt="MasterCard" loading="lazy">
+                <img src="https://via.placeholder.com/50?text=PayPal" alt="PayPal" loading="lazy">
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a>
+            <a href="return-policy.html">Return Policy</a>
+            <a href="#">Shipping Policy</a>
+        </div>
+    </footer>
+
+    <div class="chat-bot">
+        <button id="chat-toggle">💬</button>
+        <div id="chat-window" class="hidden">
+            <div class="chat-header">TechTrove Support</div>
+            <div class="chat-body">
+                <p>Welcome! How can we help you?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." id="chat-input">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
